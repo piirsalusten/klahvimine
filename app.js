@@ -74,7 +74,7 @@ TYPER.prototype = {
       this.word.removeFirstLetter()
 
       if (this.word.left.length === 0) {
-        this.guessed_words += 1
+        this.guessedWords += 1
 
         this.generateWord()
       }
