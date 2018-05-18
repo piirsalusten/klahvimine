@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>App</title>
+  <script src="game.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav class="menu">
+    <ul class="menu-list">
+      <li class="menu-item"><a href="#home-view" class="menu-link home-view active-menu">Home</a></li>
+      <li class="menu-item"><a href="#app-view" class="menu-link app-view">App</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+
+    <!-- App page -->
+    <section id="app-view">
+        <h1>Player name:</h1>
+        <a href="#home-view" class="menu-link home-view"><button class="btn" id="stop-game">END GAME!</button></a>
+        <canvas></canvas>
+
+    </section>
+
+    <!-- Home -->
+    <section id="home-view">
+        <h1>Enter your player name to play the game!</h1>
+        <p>Player name:</p>
+        <input id="player-name" type="text" title="player-name"><br>
+        <a href="#app-view" class="menu-link app-view"><button class="btn" id="play-game">Play!</button></a>
+    </section>
+
+  </main>
+
+</body>
